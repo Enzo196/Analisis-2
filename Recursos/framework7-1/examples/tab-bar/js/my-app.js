@@ -11,5 +11,5 @@ var view2 = myApp.addView('#view-2', {
     dynamicNavbar: true
 });
 var view3 = myApp.addView('#view-3');
-var view4 = myApp.addView('#view-4');
+var view4 = myApp.addView('#view-4');//
 
