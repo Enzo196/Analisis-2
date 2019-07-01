@@ -1,1 +1,1 @@
-php_uname
+php_unameholis si si si 
