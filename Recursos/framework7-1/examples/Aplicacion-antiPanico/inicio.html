@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Login</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="../../dist/css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>   
+
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views, and they are tabs-->
+    <!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+    <div class="views tabs toolbar-through">
+      <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+      <div id="view-1" class="view view-main tab active">
+        <!-- Pages-->
+        <div class="pages">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index-1" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title">Inicio</div>
+
+
+
+              <div class="content-block">
+                      
+                       <div align="center">
+                        
+                            <a href="#view-2" class="tab-link"><i class="icon tabbar-demo-icon-2"></i>
+
+                            <span class="tabbar-label"> <br>Contacto</span></a>
+                            
+
+                      </div>
+
+                      <div align="center">  
+                           
+                           <a href="#view-5" class="tab-link"> <i class="icon tabbar-demo-icon-4"></i>
+
+                             <span class="tabbar-label"> <br> Configuración</span>
+
+                           </a>
+
+                      </div>
+
+
+                      <div align="center">
+                        
+                           <a href="#view-4" class="tab-link"> <i class="icon tabbar-demo-icon-4"></i>
+
+                               <span class="tabbar-label"> <br> Rastrador</span>
+
+                          </a> 
+
+                      </div>
+
+                      <div align="center">
+                        
+                              <a href="#view-3" class="tab-link"> 
+                                 <i class="icon tabbar-demo-icon-3">
+
+                                    <span class="badge bg-red"></span>
+                                </i>
+                                <span class="tabbar-label"> <br> Bluetooth</span>
+
+                               </a>
+
+                      </div>
+
+
+                     
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second view (for second wrap)-->
+  <div id="view-2" class="view tab">
+        <div class="pages">
+          <div data-page="index-2" class="page">
+            <div class="page-content">
+              <div class="content-block-title">Contacto</div>
+              <div class="content-block">
+
+                   <!--  VOLVER AL MENU PRINCIPAL-->
+                   <div class="left sliding">
+
+                        <a href="#view-1" class=" tab-link"> <i class="icon icon-back"></i>
+
+                        <span class="tabbar-label">Volver</span>
+
+                  </a>
+
+                  </div>
+
+                  <br>
+
+                  
+              
+                   VIEW 2
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="view-3" class="view tab">
+        <div class="pages">
+          <div data-page="index-3" class="page">
+            <div class="page-content">
+              <div class="content-block-title">Bluetooth</div>
+              <div class="content-block">
+
+                    
+                    <!--  VOLVER AL MENU PRINCIPAL-->
+                     <div class="left sliding">
+
+                        <a href="#view-1" class=" tab-link"> <i class="icon icon-back"></i>
+
+                        <span class="tabbar-label">Volver</span>
+
+                       </a>
+
+                    </div>
+
+                  <br>
+              
+                   VIEW 3
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="view-4_1" class="view tab">
+        <div class="pages navbar-fixed">
+          <div data-page="index-4" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Home</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-name"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Usuario</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="nombre de usuario">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+            
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-password"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Password</div>
+                        <div class="item-input">
+                          <input type="password" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!--  VOLVER AL MENU PRINCIPAL-->
+                  <div class="block">
+                        <div class="row">
+                              <button class="col button button-fill"  >Continuar</button>
+                              <!--<button class="col button button-fill">Button</button>
+                              <button class="col button button-fill button-round">Round</button> -->
+                        </div>
+                </div>
+                  
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div id="view-4" class="view tab">
+        <div class="pages">
+          <div data-page="index-4" class="page">
+            <div class="page-content">
+              <div class="content-block-title">Rastreador</div>
+              <div class="content-block">
+                   
+                   <!--  VOLVER AL MENU PRINCIPAL-->
+                    <div class="left sliding">
+
+                        <a href="#view-1" class=" tab-link"> <i class="icon icon-back"></i>
+
+                              <span class="tabbar-label">Volver</span>
+
+                        </a>
+
+                  </div>
+
+                  <br>
+
+                    VIEW 4
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+        <div id="view-5" class="view tab">
+        <div class="pages">
+          <div data-page="index-5" class="page">
+            <div class="page-content">
+              <div class="content-block-title">Configuración</div>
+              <div class="content-block">
+                  
+                  <!--  VOLVER AL MENU PRINCIPAL-->
+                  <div class="left sliding">
+
+                        <a href="#view-1" class=" tab-link"> <i class="icon icon-back"></i>
+
+                           <span class="tabbar-label">Volver</span>
+
+                       </a>
+
+                  </div>
+
+                  <br>
+
+                  <!--  ////////////////////////////// -->
+
+                    VIEW 5
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Bottom Tabbar-->
+      <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner"><a href="#view-1" class="tab-link active"> <i class="icon tabbar-demo-icon-1"></i>
+
+          <span class="tabbar-label">Home</span></a>
+
+          <a href="#view-2" class="tab-link"><i class="icon tabbar-demo-icon-2"></i>
+
+            <span class="tabbar-label">Contacto</span></a>
+
+          <a href="#view-3" class="tab-link"> 
+            <i class="icon tabbar-demo-icon-3">
+
+              <span class="badge bg-red"></span>
+            </i>
+          <span class="tabbar-label">Bluetooth</span>
+
+          </a>
+
+          <a href="#view-4" class="tab-link"> <i class="icon tabbar-demo-icon-4"></i>
+
+          <span class="tabbar-label">Rastrador</span>
+
+          </a>
+
+          <a href="#view-5" class="tab-link"> <i class="icon tabbar-demo-icon-4"></i>
+
+          <span class="tabbar-label">Configuración</span>
+
+          </a>
+
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="../../dist/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
